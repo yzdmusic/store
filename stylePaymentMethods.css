@@ -11,7 +11,7 @@ body {
 
 /* PRODUCT PHOTO */
 .product-photo img {
-    width: 250px;
+    width: 100px;
     height: auto;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.599);
     border-radius: 3px;
@@ -26,29 +26,29 @@ body {
     justify-content: center;
     background-color: white;
     box-shadow: 0 0 9px rgba(0, 0, 0, 0.599);
-    padding: 70px;
+    padding: 10px;
     border-radius: 10px;
-    margin: 30px;
+    margin: 10px;
     margin-bottom: 180px;
 }
 
 .container-paymentmethods h2 {
     color: black;
-    font-size: 30px;
+    font-size: 18px;
 }
 
 label {
     margin-bottom: 10px;
-    font-size: 25px;
+    font-size: 17px;
 }
 
 select {
     padding: 8px;
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     border-radius: 5px;
     background-color: #ebebeb;
-    font-size: 25px;
+    font-size: 17px;
     border: 1px solid black;
 }
 
@@ -56,14 +56,14 @@ select {
     padding: 8px;
     border-radius: 5px;
     background-color: #ebebeb;
-    font-size: 25px;
+    font-size: 17px;
     border: 1px solid black;
 }
 
 .payment-option {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     cursor: pointer;
 }
 
@@ -79,12 +79,12 @@ select {
 
 #dana,
 #paypal {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
 }
 
 .payment-option img {
-    width: 150px;
+    width: 90px;
     height: auto;
     margin-right: 10px;
 }
@@ -99,7 +99,7 @@ select {
 #totalPrice {
     display: flex;
     justify-content: right;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: bold;
     margin-top: 20px;
 }
@@ -112,12 +112,12 @@ select {
 }
 
 .terms-and-conditions h1 {
-    font-size: 18px;
+    font-size: 15px;
     color: black;
 }
 
 .terms-and-conditions p {
-    font-size: 17px;
+    font-size: 13px;
     margin: 5px;
     color: #6f6f6f;
 }
@@ -170,7 +170,7 @@ select {
     background-color: black;
     border-radius: 10px;
     margin-right: 10px;
-    padding: 0 50px;
+    padding: 0 30px;
     cursor: pointer;
 
     /* EFEK BUG WARNA BIRU */
