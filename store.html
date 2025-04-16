@@ -13,6 +13,11 @@
         <h1>Store</h1>
     </div>
 
+    <div class="box-input">
+        <input type="text" id="searchInput" placeholder="What do you want to listen to?" onkeyup="checkEnter(event)">
+        <ul id="suggestions"></ul>
+    </div>
+
     <div class="categories">
         <p class="name-categories"><a href="#newest">Newest</a></p>
         <p class="name-categories"><a href="#oldest">Oldest</a></p>
@@ -22,159 +27,181 @@
 
     <div id="newest" class="card-content">
         <div class="container-tshirt newest">
-            <div class="card-tshirt" onclick="sendMessage('Suicide Room')">
-                <img src="https://yzdmusic.github.io/tshirt-1/SUICIDE ROOM T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Suicide Room</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-suicide-room(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/SUICIDE ROOM T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Suicide Room</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Newest</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <p>Newest</p>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Overthinking')">
-                <img src="https://yzdmusic.github.io/tshirt-1/OVERTHINKING T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Overthinking</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-overthinking(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/OVERTHINKING T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Overthinking</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Newest</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <p>Newest</p>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Hells Torment')">
-                <img src="https://yzdmusic.github.io/tshirt-1/HELL'S TORMENT T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Hell's Torment</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-hell's-torment(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/HELL'S TORMENT T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Hell's Torment</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Newest</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <p>Newest</p>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
+            
+            <a href="payment-whisper-for-suicide(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/WHISPER FOR SUICIDE T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Whisper For Suicide</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Newest</p>
+                        <span class="price">Rp120.000</span>
+                    </div>
+                </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Whisper For Suicide')">
-                <img src="https://yzdmusic.github.io/tshirt-1/WHISPER FOR SUICIDE T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Whisper For Suicide</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-just-want-to-die-el-zill-el-aswad(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/JUST WANT TO DIE T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Just Want To Die - El Zill El Aswad</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Newest</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <p>Newest</p>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Just Want To Die - El Zill El Aswad')">
-                <img src="https://yzdmusic.github.io/tshirt-1/JUST WANT TO DIE T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Just Want To Die - El Zill El Aswad</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-back-home-el-zill-el-aswad(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/BACK HOME T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Back Home - El Zill El Aswad</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Newest</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <p>Newest</p>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Back Home - El Zill El Aswad')">
-                <img src="https://yzdmusic.github.io/tshirt-1/BACK HOME T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Back Home - El Zill El Aswad</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-no-hope-for-life-mystic-euphoria(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/NO HOPE FOR LIFE T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>No Hope For Life - Mystic Euphoria</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Newest</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <p>Newest</p>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('No Hope For Life - Mystic Euphoria')">
-                <img src="https://yzdmusic.github.io/tshirt-1/NO HOPE FOR LIFE T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>No Hope For Life - Mystic Euphoria</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-habis-lebaran-nyari-kerjaan-dimana-lagi-ya-mesin-jahit(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/HABIS LEBARAN NYARI KERJAAN DIMANA LAGI YA T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Habis Lebaran Nyari Kerjaan Dimana Lagi Ya - Mesin Jahit</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Newest</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <p>Newest</p>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Habis Lebaran Nyari Kerjaan Dimana Lagi Ya - Mesin Jahit')">
-                <img src="https://yzdmusic.github.io/tshirt-1/HABIS LEBARAN NYARI KERJAAN DIMANA LAGI YA T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Habis Lebaran Nyari Kerjaan Dimana Lagi Ya - Mesin Jahit</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-rouh-wahda-the-dazzle(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/ROUH WAHDA T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Rouh Wahda - The Dazzle</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Newest</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <p>Newest</p>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Rouh Wahda - The Dazzle')">
-                <img src="https://yzdmusic.github.io/tshirt-1/ROUH WAHDA T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Rouh Wahda - The Dazzle</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-loser-turned-killer(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/LOSER TURNED KILLER T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Loser Turned Killer</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Newest</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <p>Newest</p>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Loser Turned Killer')">
-                <img src="https://yzdmusic.github.io/tshirt-1/LOSER TURNED KILLER T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Loser Turned Killer</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-becoming-a-killer(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/BECOMING A KILLER T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Becoming A Killer</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Newest</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <p>Newest</p>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
-
-            <div class="card-tshirt" onclick="sendMessage('Becoming A Killer')">
-                <img src="https://yzdmusic.github.io/tshirt-1/BECOMING A KILLER T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Becoming A Killer</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
-                    </div>
-                    <p>Newest</p>
-                    <span class="price">Rp120.000</span>
-                </div>
-            </div>
+            </a>
         </div>
     </div>
 
@@ -182,145 +209,165 @@
 
     <div id="oldest" class="card-content">
         <div class="container-tshirt oldest">
-            <div class="card-tshirt" onclick="sendMessage('Death Symphony - Dorokdox Symphony')">
-                <img src="https://yzdmusic.github.io/tshirt-1/DEATH SYMPHONY T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Death Symphony - Dorokdox Symphony</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-death-symphony-dorokdox-symphony(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/DEATH SYMPHONY T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Death Symphony - Dorokdox Symphony</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Oldest</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <p>Oldest</p>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Afterlife - Dorokdox Symphony')">
-                <img src="https://yzdmusic.github.io/tshirt-1/AFTERLIFE 2 T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Afterlife - Dorokdox Symphony</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-afterlife-dorokdox-symphony(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/AFTERLIFE 2 T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Afterlife - Dorokdox Symphony</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Oldest</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <p>Oldest</p>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Human Error - Dorokdox Symphony')">
-                <img src="https://yzdmusic.github.io/tshirt-1/HUMAN ERROR 2 T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Human Error - Dorokdox Symphony</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-human-error-dorokdox-symphony(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/HUMAN ERROR 2 T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Human Error - Dorokdox Symphony</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Best Seller</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <p>Best Seller</p>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Real Nightmare - Dorokdox Symphony')">
-                <img src="https://yzdmusic.github.io/tshirt-1/REAL NIGHTMARE T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Real Nightmare - Dorokdox Symphony</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-real-nightmare-dorokdox-symphony(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/REAL NIGHTMARE T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Real Nightmare - Dorokdox Symphony</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Oldest</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <p>Oldest</p>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Goatman - Dorokdox Symphony')">
-                <img src="https://yzdmusic.github.io/tshirt-1/GOATMAN 2 T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Goatman - Dorokdox Symphony</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-goatman-dorokdox-symphony(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/GOATMAN 2 T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Goatman - Dorokdox Symphony</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Best Seller</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <p>Best Seller</p>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Hysteria - Dorokdox Symphony')">
-                <img src="https://yzdmusic.github.io/tshirt-1/HYSTERIA T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Hysteria - Dorokdox Symphony</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-hysteria-dorokdox-symphony(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/HYSTERIA T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Hysteria - Dorokdox Symphony</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Oldest</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <p>Oldest</p>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Betrayed Bloodline - Dorokdox Symphony')">
-                <img src="https://yzdmusic.github.io/tshirt-1/BETRAYED BLOODLINE T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Betrayed Bloodline - Dorokdox Symphony</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-betrayed-bloodline-dorokdox-symphony(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/BETRAYED BLOODLINE T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Betrayed Bloodline - Dorokdox Symphony</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Oldest</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <p>Oldest</p>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('The End Of All Things - Dorokdox Symphony')">
-                <img src="https://yzdmusic.github.io/tshirt-1/THE END OF ALL THINGS T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>The End Of All Things - Dorokdox Symphony</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-the-end-of-all-things-dorokdox-symphony(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/THE END OF ALL THINGS T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>The End Of All Things - Dorokdox Symphony</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Oldest</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <p>Oldest</p>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Numb - Dorokdox Symphony')">
-                <img src="https://yzdmusic.github.io/tshirt-1/NUMB T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Numb - Dorokdox Symphony</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-numb-dorokdox-symphony(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/NUMB T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Numb - Dorokdox Symphony</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Oldest</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <p>Oldest</p>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Silent Room - Saint Heaven')">
-                <img src="https://yzdmusic.github.io/tshirt-1/SILENT ROOM T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Silent Room - Saint Heaven</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-silent-room-saint-heaven(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/SILENT ROOM T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Silent Room - Saint Heaven</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Oldest</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <p>Oldest</p>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
         </div>
     </div>
 
@@ -328,673 +375,787 @@
 
     <div id="best-sellers" class="card-content">
         <div class="container-tshirt best-sellers">
-            <div class="card-tshirt" onclick="sendMessage('Psychopath')">
-                <img src="https://yzdmusic.github.io/tshirt-1/PSYCHOPATH T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Psychopath</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-psychopath(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/PSYCHOPATH T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Psychopath</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Best Seller</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <p>Best Seller</p>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('No Hope For Life - Mystic Euphoria')">
-                <img src="https://yzdmusic.github.io/tshirt-1/NO HOPE FOR LIFE T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>No Hope For Life - Mystic Euphoria</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-no-hope-for-life-mystic-euphoria(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/NO HOPE FOR LIFE T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>No Hope For Life - Mystic Euphoria</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Newest</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <p>Best Seller</p>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Revenge Projection - Dorokdox Symphony')">
-                <img src="https://yzdmusic.github.io/tshirt-1/REVENGE PROJECTION T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Revenge Projection - Dorokdox Symphony</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-revenge-projection-dorokdox-symphony(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/REVENGE PROJECTION T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Revenge Projection - Dorokdox Symphony</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Best Seller</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <p>Best Seller</p>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Human Error - Dorokdox Symphony')">
-                <img src="https://yzdmusic.github.io/tshirt-1/HUMAN ERROR 2 T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Human Error - Dorokdox Symphony</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-human-error-dorokdox-symphony(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/HUMAN ERROR 2 T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Human Error - Dorokdox Symphony</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Best Seller</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <p>Best Seller</p>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Goatman - Dorokdox Symphony')">
-                <img src="https://yzdmusic.github.io/tshirt-1/GOATMAN 2 T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Goatman - Dorokdox Symphony</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-goatman-dorokdox-symphony(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/GOATMAN 2 T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Goatman - Dorokdox Symphony</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Best Seller</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <p>Best Seller</p>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
         </div>
     </div>
 
     <div id="view-all" class="card-content">
         <div class="container-tshirt view-all">
-            <div class="card-tshirt" onclick="sendMessage('Suicide Room')">
-                <img src="https://yzdmusic.github.io/tshirt-1/SUICIDE ROOM T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Suicide Room</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-suicide-room(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/SUICIDE ROOM T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Suicide Room</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Newest</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <p>Newest</p>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
             
-            <div class="card-tshirt" onclick="sendMessage('Overthinking')">
-                <img src="https://yzdmusic.github.io/tshirt-1/OVERTHINKING T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Overthinking</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-overthinking(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/OVERTHINKING T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Overthinking</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Newest</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <p>Newest</p>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Hells Torment')">
-                <img src="https://yzdmusic.github.io/tshirt-1/HELL'S TORMENT T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Hell's Torment</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-hell's-torment(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/HELL'S TORMENT T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Hell's Torment</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Newest</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <p>Newest</p>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Whisper For Suicide')">
-                <img src="https://yzdmusic.github.io/tshirt-1/WHISPER FOR SUICIDE T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Whisper For Suicide</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-whisper-for-suicide(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/WHISPER FOR SUICIDE T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Whisper For Suicide</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Newest</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <p>Newest</p>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Just Want To Die - El Zill El Aswad')">
-                <img src="https://yzdmusic.github.io/tshirt-1/JUST WANT TO DIE T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Just Want To Die - El Zill El Aswad</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-just-want-to-die-el-zill-el-aswad(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/JUST WANT TO DIE T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Just Want To Die - El Zill El Aswad</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Newest</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <p>Newest</p>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Back Home - El Zill El Aswad')">
-                <img src="https://yzdmusic.github.io/tshirt-1/BACK HOME T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Back Home - El Zill El Aswad</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-back-home-el-zill-el-aswad(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/BACK HOME T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Back Home - El Zill El Aswad</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Newest</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <p>Newest</p>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('No Hope For Life - Mystic Euphoria')">
-                <img src="https://yzdmusic.github.io/tshirt-1/NO HOPE FOR LIFE T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>No Hope For Life - Mystic Euphoria</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-no-hope-for-life-mystic-euphoria(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/NO HOPE FOR LIFE T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>No Hope For Life - Mystic Euphoria</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Newest</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <p>Newest</p>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Habis Lebaran Nyari Kerjaan Dimana Lagi Ya - Mesin Jahit')">
-                <img src="https://yzdmusic.github.io/tshirt-1/HABIS LEBARAN NYARI KERJAAN DIMANA LAGI YA T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Habis Lebaran Nyari Kerjaan Dimana Lagi Ya - Mesin Jahit</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-habis-lebaran-nyari-kerjaan-dimana-lagi-ya-mesin-jahit(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/HABIS LEBARAN NYARI KERJAAN DIMANA LAGI YA T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Habis Lebaran Nyari Kerjaan Dimana Lagi Ya - Mesin Jahit</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Newest</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <p>Newest</p>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Rouh Wahda - The Dazzle')">
-                <img src="https://yzdmusic.github.io/tshirt-1/ROUH WAHDA T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Rouh Wahda - The Dazzle</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-rouh-wahda-the-dazzle(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/ROUH WAHDA T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Rouh Wahda - The Dazzle</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Newest</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <p>Newest</p>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Loser Turned Killer')">
-                <img src="https://yzdmusic.github.io/tshirt-1/LOSER TURNED KILLER T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Loser Turned Killer</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-loser-turned-killer(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/LOSER TURNED KILLER T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Loser Turned Killer</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Newest</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <p>Newest</p>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Becoming A Killer')">
-                <img src="https://yzdmusic.github.io/tshirt-1/BECOMING A KILLER T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Becoming A Killer</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-becoming-a-killer(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/BECOMING A KILLER T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Becoming A Killer</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Newest</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <p>Newest</p>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Death Symphony - Dorokdox Symphony')">
-                <img src="https://yzdmusic.github.io/tshirt-1/DEATH SYMPHONY T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Death Symphony - Dorokdox Symphony</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-death-symphony-dorokdox-symphony(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/DEATH SYMPHONY T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Death Symphony - Dorokdox Symphony</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Oldest</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <p>Oldest</p>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Afterlife - Dorokdox Symphony')">
-                <img src="https://yzdmusic.github.io/tshirt-1/AFTERLIFE 2 T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Afterlife - Dorokdox Symphony</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-afterlife-dorokdox-symphony(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/AFTERLIFE 2 T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Afterlife - Dorokdox Symphony</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Oldest</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <p>Oldest</p>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Human Error - Dorokdox Symphony')">
-                <img src="https://yzdmusic.github.io/tshirt-1/HUMAN ERROR 2 T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Human Error - Dorokdox Symphony</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-human-error-dorokdox-symphony(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/HUMAN ERROR 2 T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Human Error - Dorokdox Symphony</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Best Seller</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <p>Best Seller</p>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Real Nightmare - Dorokdox Symphony')">
-                <img src="https://yzdmusic.github.io/tshirt-1/REAL NIGHTMARE T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Real Nightmare - Dorokdox Symphony</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-real-nightmare-dorokdox-symphony(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/REAL NIGHTMARE T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Real Nightmare - Dorokdox Symphony</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Oldest</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <p>Oldest</p>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Goatman - Dorokdox Symphony')">
-                <img src="https://yzdmusic.github.io/tshirt-1/GOATMAN 2 T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Goatman - Dorokdox Symphony</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-goatman-dorokdox-symphony(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/GOATMAN 2 T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Goatman - Dorokdox Symphony</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Best Seller</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <p>Best Seller</p>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Hysteria - Dorokdox Symphony')">
-                <img src="https://yzdmusic.github.io/tshirt-1/HYSTERIA T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Hysteria - Dorokdox Symphony</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-hysteria-dorokdox-symphony(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/HYSTERIA T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Hysteria - Dorokdox Symphony</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Oldest</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <p>Oldest</p>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Betrayed Bloodline - Dorokdox Symphony')">
-                <img src="https://yzdmusic.github.io/tshirt-1/BETRAYED BLOODLINE T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Betrayed Bloodline - Dorokdox Symphony</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-betrayed-bloodline-dorokdox-symphony(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/BETRAYED BLOODLINE T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Betrayed Bloodline - Dorokdox Symphony</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Oldest</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <p>Oldest</p>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('The End Of All Things - Dorokdox Symphony')">
-                <img src="https://yzdmusic.github.io/tshirt-1/THE END OF ALL THINGS T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>The End Of All Things - Dorokdox Symphony</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-the-end-of-all-things-dorokdox-symphony(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/THE END OF ALL THINGS T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>The End Of All Things - Dorokdox Symphony</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Oldest</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <p>Oldest</p>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Numb - Dorokdox Symphony')">
-                <img src="https://yzdmusic.github.io/tshirt-1/NUMB T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Numb - Dorokdox Symphony</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-numb-dorokdox-symphony(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/NUMB T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Numb - Dorokdox Symphony</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Oldest</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <p>Oldest</p>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Silent Room - Saint Heaven')">
-                <img src="https://yzdmusic.github.io/tshirt-1/SILENT ROOM T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Silent Room - Saint Heaven</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-silent-room-saint-heaven(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/SILENT ROOM T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Silent Room - Saint Heaven</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Oldest</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <p>Oldest</p>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Oppression - No Long Now')">
-                <img src="https://yzdmusic.github.io/tshirt-1/OPPRESSION T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Oppression - No Long Now</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-oppression-no-long-now(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/OPPRESSION T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Oppression - No Long Now</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
+            
+            <a href="payment-they're-killers-lina(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/THEY'RE KILLERS T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>They're Killers - Lina</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <span class="price">Rp120.000</span>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="payment-suicide-projection-pudge(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/SUICIDE PROJECTION T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Suicide Projection - Pudge</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <span class="price">Rp120.000</span>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="payment-simfoniyyet-el-'ishq-el-zill-el-aswad(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/SIMFONIYYET EL 'ISHQ T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Simfoniyyet El 'Ishq - El Zill El Aswad</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <span class="price">Rp120.000</span>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="payment-rehlet-hayat-regel-fashilel-zill-el-aswad(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/REHLET HAYAT RAGEL FASHIL T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Rehlet Hayat Regel Fashil - El Zill El Aswad</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <span class="price">Rp120.000</span>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="payment-better-off-dead-saint-heaven(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/BETTER OFF DEAD T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Better Off Dead - Saint Heaven</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <span class="price">Rp120.000</span>
+                    </div>
+                </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Theyre Killers - Lina')">
-                <img src="https://yzdmusic.github.io/tshirt-1/THEY'RE KILLERS T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>They're Killers - Lina</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-whispers-of-peace-saint-heaven(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/WHISPERS OF PEACE T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Whispers Of Peace - Saint Heaven</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Suicide Projection - Pudge')">
-                <img src="https://yzdmusic.github.io/tshirt-1/SUICIDE PROJECTION T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Suicide Projection - Pudge</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-suicide-attempt-pudge(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/SUICIDE ATTEMPT T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Suicide Attempt - Pudge</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Simfoniyyet El Ishq - El Zill El Aswad')">
-                <img src="https://yzdmusic.github.io/tshirt-1/SIMFONIYYET EL 'ISHQ T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Simfoniyyet El 'Ishq - El Zill El Aswad</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-paranoid(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/PARANOID T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Paranoid</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
+            
+            <a href="payment-demon-queen-saint-heaven(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/DEMON QUEEN T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Demon Queen - Saint Heaven</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <span class="price">Rp120.000</span>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="payment-persib-day-dorokdox-symphony(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/PERSIB DAY T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Persib Day - Dorokdox Symphony</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <span class="price">Rp120.000</span>
+                    </div>
+                </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Rehlet Hayat Regel Fashil - El Zill El Aswad')">
-                <img src="https://yzdmusic.github.io/tshirt-1/REHLET HAYAT RAGEL FASHIL T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Rehlet Hayat Regel Fashil - El Zill El Aswad</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-democrazy-dorokdox-symphony(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/DEMOCRAZY T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Democrazy - Dorokdox Symphony</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
+            
+            <a href="payment-proyeksi-bunuh-diri-kehedsia(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/PROYEKSI BUNUH DIRI T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Proyeksi Bunuh Diri - Kehedsia</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <span class="price">Rp120.000</span>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="payment-sekte-sesat-kehedsia(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/SEKTE SESAT T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Sekte Sesat - Kehedsia</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <span class="price">Rp120.000</span>
+                    </div>
+                </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Better Off Dead - Saint Heaven')">
-                <img src="https://yzdmusic.github.io/tshirt-1/BETTER OFF DEAD T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Better Off Dead - Saint Heaven</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-voice-of-the-people-kehedsia(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/VOICE OF THE PEOPLE T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Voice Of The People - Kehedsia</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
+            
+            <a href="payment-mati-bunuh-diri(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/MATI BUNUH DIRI T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Mati Bunuh Diri</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <span class="price">Rp120.000</span>
+                    </div>
+                </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Whispers Of Peace - Saint Heaven')">
-                <img src="https://yzdmusic.github.io/tshirt-1/WHISPERS OF PEACE T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Whispers Of Peace - Saint Heaven</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-serenity-and-harmony-rubick(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/SERENITY AND HARMONY T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Serenity And Harmony - Rubick</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Suicide Attempt - Pudge')">
-                <img src="https://yzdmusic.github.io/tshirt-1/SUICIDE ATTEMPT T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Suicide Attempt - Pudge</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-'an-el-hubb-kabetshino(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/'AN EL HUBB T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>'An El Hubb - Kabetshino</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Paranoid')">
-                <img src="https://yzdmusic.github.io/tshirt-1/PARANOID T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Paranoid</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-rehlity-ma'a-el-hubb-kabetshino(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/REHLITY MA'A EL HUBB T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Rehlity Ma'a El Hubb - Kabetshino</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Demon Queen - Saint Heaven')">
-                <img src="https://yzdmusic.github.io/tshirt-1/DEMON QUEEN T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Demon Queen - Saint Heaven</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-everything-about-women-rubick(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/EVERYTHING ABOUT WOMEN T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Everything About Women - Rubick</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Persib Day - Dorokdox Symphony')">
-                <img src="https://yzdmusic.github.io/tshirt-1/PERSIB DAY T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Persib Day - Dorokdox Symphony</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-all-about-love-hazza(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/ALL ABOUT LOVE T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>All About Love - Hazza</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Democrazy - Dorokdox Symphony')">
-                <img src="https://yzdmusic.github.io/tshirt-1/DEMOCRAZY T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Democrazy - Dorokdox Symphony</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-halawes-hazza(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/HALAWES T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Halawes - Hazza</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Proyeksi Bunuh Diri - Kehedsia')">
-                <img src="https://yzdmusic.github.io/tshirt-1/PROYEKSI BUNUH DIRI T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Proyeksi Bunuh Diri - Kehedsia</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-psychopath(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/PSYCHOPATH T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Psychopath</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Best Seller</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card-tshirt" onclick="sendMessage('Sekte Sesat - Kehedsia')">
-                <img src="https://yzdmusic.github.io/tshirt-1/SEKTE SESAT T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Sekte Sesat - Kehedsia</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
+            <a href="payment-revenge-projection-dorokdox-symphony(tshirt).html">
+                <div class="card-tshirt">
+                    <img src="https://yzdmusic.github.io/tshirt-1/REVENGE PROJECTION T-SHIRT.jpg" alt="">
+                    <div class="description">
+                        <h1>Revenge Projection - Dorokdox Symphony</h1>
+                        <div class="size">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p>Best Seller</p>
+                        <span class="price">Rp120.000</span>
                     </div>
-                    <span class="price">Rp120.000</span>
                 </div>
-            </div>
-
-            <div class="card-tshirt" onclick="sendMessage('Voice Of The People - Kehedsia')">
-                <img src="https://yzdmusic.github.io/tshirt-1/VOICE OF THE PEOPLE T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Voice Of The People - Kehedsia</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
-                    </div>
-                    <span class="price">Rp120.000</span>
-                </div>
-            </div>
-
-            <div class="card-tshirt" onclick="sendMessage('Mati Bunuh Diri')">
-                <img src="https://yzdmusic.github.io/tshirt-1/MATI BUNUH DIRI T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Mati Bunuh Diri</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
-                    </div>
-                    <span class="price">Rp120.000</span>
-                </div>
-            </div>
-
-            <div class="card-tshirt" onclick="sendMessage('Serenity And Harmony - Rubick')">
-                <img src="https://yzdmusic.github.io/tshirt-1/SERENITY AND HARMONY T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Serenity And Harmony - Rubick</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
-                    </div>
-                    <span class="price">Rp120.000</span>
-                </div>
-            </div>
-
-            <div class="card-tshirt" onclick="sendMessage('An El Hubb - Kabetshino')">
-                <img src="https://yzdmusic.github.io/tshirt-1/'AN EL HUBB T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>'An El Hubb - Kabetshino</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
-                    </div>
-                    <span class="price">Rp120.000</span>
-                </div>
-            </div>
-
-            <div class="card-tshirt" onclick="sendMessage('Rehlity Maa El Hubb - Kabetshino')">
-                <img src="https://yzdmusic.github.io/tshirt-1/REHLITY MA'A EL HUBB T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Rehlity Ma'a El Hubb - Kabetshino</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
-                    </div>
-                    <span class="price">Rp120.000</span>
-                </div>
-            </div>
-
-            <div class="card-tshirt" onclick="sendMessage('Everything About Women - Rubick')">
-                <img src="https://yzdmusic.github.io/tshirt-1/EVERYTHING ABOUT WOMEN T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Everything About Women - Rubick</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
-                    </div>
-                    <span class="price">Rp120.000</span>
-                </div>
-            </div>
-
-            <div class="card-tshirt" onclick="sendMessage('All About Love - Hazza')">
-                <img src="https://yzdmusic.github.io/tshirt-1/ALL ABOUT LOVE T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>All About Love - Hazza</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
-                    </div>
-                    <span class="price">Rp120.000</span>
-                </div>
-            </div>
-
-            <div class="card-tshirt" onclick="sendMessage('Halawes - Hazza')">
-                <img src="https://yzdmusic.github.io/tshirt-1/HALAWES T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Halawes - Hazza</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
-                    </div>
-                    <span class="price">Rp120.000</span>
-                </div>
-            </div>
-
-            <div class="card-tshirt" onclick="sendMessage('Psychopath')">
-                <img src="https://yzdmusic.github.io/tshirt-1/PSYCHOPATH T-SHIRT.jpg" alt="">
-                <div class="description">
-                    <h1>Psychopath</h1>
-                    <div class="size">
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
-                    </div>
-                    <p>Best Seller</p>
-                    <span class="price">Rp120.000</span>
-                </div>
-            </div>
+            </a>
         </div>
     </div>
 
@@ -1108,6 +1269,6 @@
     </script>
 
     <script src="collapsible-store.js"></script>
-    <script src="payment-store.js"></script>
+    <script src="search-engine-store.js"></script>
 </body>
 </html>

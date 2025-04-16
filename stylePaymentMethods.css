@@ -1,0 +1,252 @@
+@charset "utf-8";
+
+/* CSS Document*/
+body {
+    background-color: #e1dede;
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', Verdana, Arial, sans-serif;
+}
+
+/* PRODUCT PHOTO */
+.product-photo img {
+    width: 250px;
+    height: auto;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.599);
+    border-radius: 3px;
+}
+
+/* PRODUCT PHOTO */
+
+/* PAYMENT METHODS */
+.container-paymentmethods {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.599);
+    padding: 70px;
+    border-radius: 10px;
+    margin: 30px;
+    margin-bottom: 180px;
+}
+
+.container-paymentmethods h2 {
+    color: black;
+    font-size: 30px;
+}
+
+label {
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+select {
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: #ebebeb;
+    font-size: 25px;
+    border: 1px solid black;
+}
+
+#quantity {
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #ebebeb;
+    font-size: 25px;
+    border: 1px solid black;
+}
+
+.payment-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.payment-option input {
+    margin-right: 10px;
+}
+
+#tshirt,
+#design-only {
+    width: 15px;
+    height: 15px;
+}
+
+#dana,
+#paypal {
+    width: 20px;
+    height: 20px;
+}
+
+.payment-option img {
+    width: 150px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.radio-group {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+}
+
+#totalPrice {
+    display: flex;
+    justify-content: right;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.terms-and-conditions {
+    margin-top: 150px;
+    background-color: #e1dede;
+    padding: 15px 15px;
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.599);
+}
+
+.terms-and-conditions h1 {
+    font-size: 18px;
+    color: black;
+}
+
+.terms-and-conditions p {
+    font-size: 17px;
+    margin: 5px;
+    color: #6f6f6f;
+}
+
+/* PAYMENT METHODS */
+
+/* MENU */
+/* Gaya Navigasi Bawah */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.btn-back {
+    margin-left: 10px;
+    cursor: pointer;
+    margin-top: 7px;
+    filter: brightness(0%);
+
+    /* EFEK BUG WARNA BIRU */
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    touch-action: manipulation;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.btn-back img {
+    width: 35px;
+    height: 35px;
+
+    /* EFEK BUG WARNA BIRU */
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    touch-action: manipulation;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.btn-buy {
+    background-color: black;
+    border-radius: 10px;
+    margin-right: 10px;
+    padding: 0 50px;
+    cursor: pointer;
+
+    /* EFEK BUG WARNA BIRU */
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    touch-action: manipulation;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.btn-buy h1 {
+    color: white;
+    font-size: 17px;
+    font-weight: normal;
+
+    /* EFEK BUG WARNA BIRU */
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    touch-action: manipulation;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+/* Efek Aktif */
+.nav-item.active {
+    filter: brightness(3);
+}
+
+/* Menghilangkan efek highlight biru pada mobile browser */
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* MENU */
+
+
+
+@media screen and (min-width: 1280px) {}
+
+@media screen and (min-width: 720px) {}
+
+@media screen and (width: 800px) {}
+
+@media screen and (max-width: 810px) {}
+
+@media screen and (width: 375px) {}
+
+@media screen and (width: 360px) {}
+
+@media screen and (width: 320px) {}
+
+
+
+/* MOBILE DEVICES */
+@media (min-width: 320px) and (max-width: 375px) {}
+
+/* MOBILE DEVICES */
+@media (min-width: 376px) and (max-width: 480px) {}
+
+/* TABLET */
+@media (min-width: 481px) and (max-width: 1025px) {}
+
+/* DESKTOP SITE (MOBILE DEVICES) */
+@media screen and (min-width: 768px) and (max-width: 1080px) {}
+
+/* LAPTOP */
+@media (min-width: 769px) and (max-width: 1024px) {}
+
+/* DESKTOP */
+@media (min-width: 1025px) {}
+
+/* DESKTOP 1920px */
+@media (min-width: 1920px) {}
+
+@media only screen and (max-width: 926px) and (orientation: landscape) {}
+
+@media only screen and (min-width: 1024px) and (orientation: landscape) {}

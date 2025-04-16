@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="stylePaymentMethods.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<title>Payment Methods: Suicide Projection - Pudge (T-Shirt)</title>
+</head>
+<body>
+    <div class="container-paymentmethods">
+        <div class="product-photo">
+            <img src="https://yzdmusic.github.io/tshirt-1/SUICIDE PROJECTION T-SHIRT.jpg" alt="">
+        </div>
+
+        <h2>Select Purchase Type</h2>
+        <label>
+            <input type="radio" name="purchaseType" value="kaos" checked onchange="handleTypeChange()" id="tshirt"> Buy Physical T-Shirt
+        </label>
+        <label>
+            <input type="radio" name="purchaseType" value="desain" onchange="handleTypeChange()" id="desing-only"> Buy Design Only (Rp20.000)
+        </label>
+
+        <label>Payment Method:</label>
+        <div class="radio-group" id="paymentMethods">
+            <div class="payment-option">
+                <input type="radio" name="payment" value="Dana" id="dana" checked>
+                <img src="dana-logo.png" alt="Dana Logo">
+            </div>
+            <div class="payment-option">
+                <input type="radio" name="payment" value="PayPal" id="paypal">
+                <img src="paypal-logo.png" alt="PayPal Logo">
+            </div>
+        </div>
+
+        <label for="size">Select Size:</label>
+        <select id="size">
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+        </select>
+
+        <label for="quantity">Quantity of T-Shirts:</label>
+        <input type="number" id="quantity" value="1" min="1" onchange="updateTotal()">
+
+        <div id="totalPrice">Total: Rp120.000</div>
+
+        <div class="terms-and-conditions">
+            <h1>Terms & Conditions:</h1>
+            <p>1. If you purchase the design only, we’ll send the .PNG file to your Gmail.</p>
+            <p>2. The design file will be sent once the payment is confirmed.</p>
+            <p>3. If you order the physical t-shirt, shipping may take 7–14 days due to our pre-order system.</p>
+            <p>4. If you order the physical t-shirt but the payment isn’t confirmed yet, your order won’t be processed.</p>
+            <p>5. Please send your payment proof to our WhatsApp number.</p>
+
+            <h1>Syarat dan Ketentuan:</h1>
+            <p>1. Jika kalian membeli desain saja, maka kami akan mengirimkan file desainnya berformat .PNG melalui Gmail kalian.</p>
+            <p>2. Pengiriman file desain akan dikirim jika pembayaran sudah deal.</p>
+            <p>3. Jika kalian membeli kaos fisik, kemungkinan pengiriman akan memakan waktu 7–14 hari dikarenakan sistem pre-order.</p>
+            <p>4. Jika kalian membeli kaos fisik dan pembayaran belum deal, maka kaos belum akan diproses.</p>
+            <p>5. Kirimkan bukti pembayaran ke nomor WhatsApp kami.</p>
+        </div>
+    </div>
+
+    <div class="bottom-nav">
+        <div class="btn-back"><a href="payment-suicide-projection-pudge(tshirt).html">
+            <img src="back-button2.png" alt="">
+        </a></div>
+
+        <div class="btn-buy" onclick="checkout()">
+            <h1>Confirm Payment</h1>
+        </div>
+    </div>
+
+	<!-- Add here -->
+	<link
+		rel="Shortcut Icon"
+		type="image/png"
+		href="YZD LOGO.png"
+	>
+
+    <script>
+        const priceKaos = 120000;
+        const priceDesain = 20000;
+    
+        function handleTypeChange() {
+          const purchaseType = document.querySelector('input[name="purchaseType"]:checked').value;
+          const sizeSelect = document.getElementById("size");
+          const quantityInput = document.getElementById("quantity");
+    
+          if (purchaseType === "desain") {
+            sizeSelect.disabled = true;
+            quantityInput.disabled = true;
+            quantityInput.value = 1;
+          } else {
+            sizeSelect.disabled = false;
+            quantityInput.disabled = false;
+          }
+    
+          updateTotal();
+        }
+    
+        function updateTotal() {
+          const purchaseType = document.querySelector('input[name="purchaseType"]:checked').value;
+          const quantity = parseInt(document.getElementById("quantity").value);
+          let total = 0;
+    
+          if (purchaseType === "desain") {
+            total = priceDesain;
+          } else {
+            total = priceKaos * quantity;
+          }
+    
+          const formatted = new Intl.NumberFormat('id-ID').format(total);
+          document.getElementById("totalPrice").textContent = `Total to Pay: Rp${formatted}`;
+        }
+    
+        function checkout() {
+          const paymentRadios = document.getElementsByName("payment");
+          let selectedPayment = "";
+          for (const radio of paymentRadios) {
+            if (radio.checked) {
+              selectedPayment = radio.value;
+              break;
+            }
+          }
+    
+          const purchaseType = document.querySelector('input[name="purchaseType"]:checked').value;
+          const size = document.getElementById("size").value;
+          const quantity = parseInt(document.getElementById("quantity").value);
+          const total = (purchaseType === "desain") ? priceDesain : priceKaos * quantity;
+          const formattedTotal = new Intl.NumberFormat('id-ID').format(total);
+    
+          let message = `Hello! Saya ingin memesan:\n`;
+    
+          if (purchaseType === "desain") {
+            message += `• desain kaos saja\n`;
+          } else {
+            message += `• kaos fisik "Suicide Projection - Pudge"\nUkuran: ${size}\nJumlah: ${quantity}\n`;
+          }
+    
+          message += `Pembayaran via: ${selectedPayment}\nTotal: Rp ${formattedTotal}`;
+    
+          const encodedMessage = encodeURIComponent(message);
+          const phoneNumber = "6281218141079";
+          const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+          window.open(whatsappURL, "_blank");
+        }
+    
+        document.addEventListener("DOMContentLoaded", updateTotal);
+    </script>
+
+</body>
+</html>
