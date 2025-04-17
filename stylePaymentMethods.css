@@ -13,8 +13,8 @@ body {
 .product-photo img {
     width: 100px;
     height: auto;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.599);
-    border-radius: 3px;
+    border-radius: 5px;
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.599);
 }
 
 /* PRODUCT PHOTO */
@@ -34,30 +34,86 @@ body {
 
 .container-paymentmethods h2 {
     color: black;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 label {
     margin-bottom: 10px;
     font-size: 17px;
+    color: black;
+}
+
+.payment-methods {
+    font-weight: bold;
+}
+
+#userInfo {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+}
+
+#emailInput {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+}
+
+#name {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 8px;
+    background-color: white;
+    border: 2px solid black;
+}
+
+#address {
+    border-radius: 5px;
+    padding: 8px;
+    background-color: white;
+    border: 2px solid black;
+}
+
+#email {
+    border-radius: 5px;
+    padding: 8px;
+    background-color: white;
+    border: 2px solid black;
+}
+
+input[type="radio"] {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    cursor: text;
 }
 
 select {
-    padding: 8px;
     width: 100%;
-    margin-bottom: 30px;
-    border-radius: 5px;
-    background-color: #ebebeb;
-    font-size: 17px;
-    border: 1px solid black;
+    padding: 10px 14px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    color: black;
+    font-size: 14px;
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 #quantity {
-    padding: 8px;
-    border-radius: 5px;
-    background-color: #ebebeb;
-    font-size: 17px;
-    border: 1px solid black;
+    width: 10%;
+    padding: 10px 14px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: black;
+    font-size: 14px;
 }
 
 .payment-option {
@@ -71,29 +127,10 @@ select {
     margin-right: 10px;
 }
 
-#tshirt,
-#design-only {
-    width: 15px;
-    height: 15px;
-}
-
-#dana,
-#paypal {
-    width: 15px;
-    height: 15px;
-}
-
 .payment-option img {
     width: 90px;
     height: auto;
     margin-right: 10px;
-}
-
-.radio-group {
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: right;
-    flex-direction: column;
 }
 
 #totalPrice {
@@ -109,6 +146,7 @@ select {
     background-color: #e1dede;
     padding: 15px 15px;
     box-shadow: 0 0 9px rgba(0, 0, 0, 0.599);
+    border-radius: 5px;
 }
 
 .terms-and-conditions h1 {
@@ -121,6 +159,53 @@ select {
     margin: 5px;
     color: #6f6f6f;
 }
+
+/* alert */
+.alert {
+    background-color: #e1dede;
+    color: black;
+    padding: 12px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: sans-serif;
+    max-width: 100%;
+    margin: 20px auto;
+    box-shadow: 0 0px 9px rgba(0, 0, 0, 0.500);
+    position: relative;
+    animation: fadeIn 0.3s ease;
+}
+
+.icon {
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.close-btn {
+    cursor: pointer;
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* alert */
 
 /* PAYMENT METHODS */
 
@@ -141,7 +226,7 @@ select {
 .btn-back {
     margin-left: 10px;
     cursor: pointer;
-    margin-top: 7px;
+    margin-top: 3px;
     filter: brightness(0%);
 
     /* EFEK BUG WARNA BIRU */
@@ -154,8 +239,8 @@ select {
 }
 
 .btn-back img {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
 
     /* EFEK BUG WARNA BIRU */
     outline: none;
