@@ -21,6 +21,8 @@ body {
 
 /* PAYMENT METHODS */
 .container-paymentmethods {
+    --main-color: black;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -67,6 +69,7 @@ label {
     padding: 8px;
     background-color: white;
     border: 2px solid black;
+    box-shadow: 4px 4px var(--main-color);
 }
 
 #address {
@@ -74,6 +77,7 @@ label {
     padding: 8px;
     background-color: white;
     border: 2px solid black;
+    box-shadow: 4px 4px var(--main-color);
 }
 
 #email {
@@ -81,6 +85,7 @@ label {
     padding: 8px;
     background-color: white;
     border: 2px solid black;
+    box-shadow: 4px 4px var(--main-color);
 }
 
 input[type="radio"] {
@@ -102,6 +107,7 @@ select {
     margin-bottom: 15px;
     color: black;
     font-size: 15px;
+    box-shadow: 4px 4px var(--main-color);
 }
 
 #quantity {
@@ -112,6 +118,7 @@ select {
     border-radius: 8px;
     color: black;
     font-size: 15px;
+    box-shadow: 4px 4px var(--main-color);
 }
 
 .container-payment-option {
@@ -216,6 +223,8 @@ select {
 /* MENU */
 /* Gaya Navigasi Bawah */
 .bottom-nav {
+    --main-color: black;
+
     position: fixed;
     bottom: 0;
     left: 0;
@@ -256,11 +265,13 @@ select {
 }
 
 .btn-buy {
-    background-color: black;
+    background-color: white;
     border-radius: 10px;
     margin-right: 10px;
-    padding: 0 30px;
+    padding: 0 10px;
     cursor: pointer;
+    box-shadow: 4px 4px var(--main-color);
+    border: 2px solid black;
 
     /* EFEK BUG WARNA BIRU */
     outline: none;
@@ -271,8 +282,13 @@ select {
     -ms-user-select: none;
 }
 
+.btn-buy:active {
+    box-shadow: 0px 0px var(--main-color);
+    transform: translate(3px, 3px);
+}
+
 .btn-buy h1 {
-    color: white;
+    color: black;
     font-size: 17px;
     font-weight: normal;
 
