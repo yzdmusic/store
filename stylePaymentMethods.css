@@ -98,12 +98,10 @@ select {
     padding: 10px 14px;
     background-color: white;
     border: 2px solid black;
-    border-radius: 10px;
+    border-radius: 8px;
     margin-bottom: 15px;
     color: black;
-    font-size: 14px;
-    appearance: none;
-    -webkit-appearance: none;
+    font-size: 15px;
 }
 
 #quantity {
@@ -111,9 +109,15 @@ select {
     padding: 10px 14px;
     background-color: white;
     border: 2px solid black;
-    border-radius: 10px;
+    border-radius: 8px;
     color: black;
-    font-size: 14px;
+    font-size: 15px;
+}
+
+.container-payment-option {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .payment-option {
