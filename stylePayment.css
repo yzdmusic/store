@@ -303,7 +303,8 @@ body {
 .btn-buy h1 {
     color: white;
     font-size: 17px;
-    font-weight: normal;
+    font-weight: bold;
+    margin-top: 11px;
 
     /* EFEK BUG WARNA BIRU */
     outline: none;
