@@ -199,7 +199,7 @@ label[for="quantity"] {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: sans-serif;
+    font-family: monospace;
     max-width: 100%;
     margin: 20px auto;
     box-shadow: 4px 4px var(--main-color);
