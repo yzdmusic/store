@@ -38,7 +38,7 @@ const data = [
     { name: "Simfoniyyet El 'Ishq - El Zill El Aswad", url: "payment-simfoniyyet-el-'ishq-el-zill-el-aswad(tshirt).html", image: "https://yzdmusic.github.io/tshirt-1/SIMFONIYYET EL 'ISHQ T-SHIRT.jpg", price: "Rp120.000" },
     { name: "Suicide Attempt - Pudge", url: "payment-suicide-attempt-pudge(tshirt).html", image: "https://yzdmusic.github.io/tshirt-1/SUICIDE ATTEMPT T-SHIRT.jpg", price: "Rp120.000" },
     { name: "Suicide Projection - Pudge", url: "payment-suicide-projection-pudge(tshirt).html", image: "https://yzdmusic.github.io/tshirt-1/SUICIDE PROJECTION T-SHIRT.jpg", price: "Rp120.000" },
-    { name: "Suicide Room", url: "payment-suicide-room(tshirt).html", image: "https://yzdmusic.github.io/tshirt-1/SUICIDE ROOM T-SHIRT.jpg", price: "Rp120.000" },
+    { name: "Suicide Room - El Zill El Aswad", url: "payment-suicide-room-el-zill-el-aswad(tshirt).html", image: "https://yzdmusic.github.io/tshirt-1/SUICIDE ROOM T-SHIRT.jpg", price: "Rp120.000" },
     { name: "The End Of All Things - Dorokdox Symphony", url: "payment-the-end-of-all-things-dorokdox-symphony(tshirt).html", image: "https://yzdmusic.github.io/tshirt-1/THE END OF ALL THINGS T-SHIRT.jpg", price: "Rp120.000" },
     { name: "They're Killers - Lina", url: "payment-they're-killers-lina(tshirt).html", image: "https://yzdmusic.github.io/tshirt-1/THEY'RE KILLERS T-SHIRT.jpg", price: "Rp120.000" },
     { name: "Voice Of The People - Kehedsia", url: "payment-voice-of-the-people-kehedsia(tshirt).html", image: "https://yzdmusic.github.io/tshirt-1/VOICE OF THE PEOPLE T-SHIRT.jpg", price: "Rp120.000" },
