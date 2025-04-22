@@ -24,7 +24,7 @@ const data = [
     { name: "Numb - Dorokdox Symphony (T-Shirt)", url: "payment-numb-dorokdox-symphony(tshirt).html", image: "https://yzdmusic.github.io/tshirt-1/NUMB T-SHIRT.jpg", price: "Rp120.000" },
     { name: "Oppression - No Long Now (T-Shirt)", url: "payment-oppression-no-long-now(tshirt).html", image: "https://yzdmusic.github.io/tshirt-1/OPPRESSION T-SHIRT.jpg", price: "Rp120.000" },
     { name: "Overthinking (T-Shirt)", url: "payment-overthinking(tshirt).html", image: "https://yzdmusic.github.io/tshirt-1/OVERTHINKING T-SHIRT.jpg", price: "Rp120.000" },
-    { name: "Paranoid (T-Shirt)", url: "payment-paranoid(tshirt).html", image: "https://yzdmusic.github.io/tshirt-1/PARANOID T-SHIRT.jpg", price: "Rp120.000" },
+    { name: "Paranoid - Mawt Samit (T-Shirt)", url: "payment-paranoid-mawt-samit(tshirt).html", image: "https://yzdmusic.github.io/tshirt-1/PARANOID T-SHIRT.jpg", price: "Rp120.000" },
     { name: "Persib Day - Dorokdox Symphony (T-Shirt)", url: "payment-persib-day-dorokdox-symphony(tshirt).html", image: "https://yzdmusic.github.io/tshirt-1/PERSIB DAY T-SHIRT.jpg", price: "Rp120.000" },
     { name: "Proyeksi Bunuh Diri - Kehedsia (T-Shirt)", url: "payment-proyeksi-bunuh-diri-kehedsia(tshirt).html", image: "https://yzdmusic.github.io/tshirt-1/PROYEKSI BUNUH DIRI T-SHIRT.jpg", price: "Rp120.000" },
     { name: "Psychopath (T-Shirt)", url: "payment-psychopath(tshirt).html", image: "https://yzdmusic.github.io/tshirt-1/PSYCHOPATH T-SHIRT.jpg", price: "Rp120.000" },
