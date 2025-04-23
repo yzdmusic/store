@@ -45,6 +45,10 @@ const data = [
     { name: "Voice Of The People - Kehedsia (T-Shirt)", url: "payment-voice-of-the-people-kehedsia(tshirt).html", image: "https://yzdmusic.github.io/tshirt-1/VOICE OF THE PEOPLE T-SHIRT.jpg", price: "Rp120.000" },
     { name: "Whisper For Suicide (T-Shirt)", url: "payment-whisper-for-suicide(tshirt).html", image: "https://yzdmusic.github.io/tshirt-1/WHISPER FOR SUICIDE T-SHIRT.jpg", price: "Rp120.000" },
     { name: "Whispers Of Peace - Saint Heaven (T-Shirt)", url: "payment-whispers-of-peace-saint-heaven(tshirt).html", image: "https://yzdmusic.github.io/tshirt-1/WHISPERS OF PEACE T-SHIRT.jpg", price: "Rp120.000" },
+
+
+    // DESIGN ONLY //
+    { name: "Surprise Design (Design Only)", url: "payment-surprise-design-1(design-only).html", image: "https://yzdmusic.github.io/tshirt-1/RANDOM DESIGN T-SHIRT.jpg", price: "Rp10.000" },
     // Tambahkan data lainnya sesuai kebutuhan
 ];
 

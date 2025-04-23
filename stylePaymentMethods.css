@@ -96,10 +96,34 @@ label {
     font-family: monospace;
 }
 
+#discount {
+    color: black;
+    border-radius: 5px;
+    padding: 8px;
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 4px 4px var(--main-color);
+    font-family: monospace;
+}
+
+#note {
+    color: black;
+    border-radius: 5px;
+    padding: 8px;
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 4px 4px var(--main-color);
+    font-family: monospace;
+}
+
 input[type="radio"] {
     width: 15px;
     height: 15px;
     cursor: pointer;
+}
+
+.not-use {
+    text-decoration: 1px line-through;
 }
 
 input[type="text"] {
@@ -131,6 +155,18 @@ select {
 }
 
 label[for="quantity"] {
+    margin-top: 30px;
+}
+
+label[for="notes"] {
+    margin-top: 30px;
+}
+
+label[for="size"] {
+    margin-top: 10px;
+}
+
+.payment-methods {
     margin-top: 30px;
 }
 

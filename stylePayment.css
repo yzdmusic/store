@@ -102,6 +102,22 @@ body {
     left: 40px;
 }
 
+.random-design img {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    margin-top: 5px;
+    left: 10px;
+}
+
+.random-design p {
+    font-size: 10px;
+    width: 150px;
+    position: absolute;
+    margin-top: 15px;
+    left: 40px;
+}
+
 .original img {
     width: 25px;
     height: 25px;
