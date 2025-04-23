@@ -48,7 +48,7 @@ const data = [
 
 
     // DESIGN ONLY //
-    { name: "Surprise Design (Design Only)", url: "payment-surprise-design-1(design-only).html", image: "https://yzdmusic.github.io/tshirt-1/RANDOM DESIGN T-SHIRT.jpg", price: "Rp10.000" },
+    { name: "Surprise Design (Design Only)", url: "payment-surprise-design-1(design-only).html", image: "https://yzdmusic.github.io/tshirt-1/ALL MYSTERI BOX T-SHIRT.jpg", price: "Rp10.000" },
     // Tambahkan data lainnya sesuai kebutuhan
 ];
 
