@@ -20,6 +20,7 @@ const data = [
     { name: "Just Want To Die - El Zill El Aswad (T-Shirt)", url: "payment-just-want-to-die-el-zill-el-aswad(tshirt).html", image: "https://yzdmusic.github.io/tshirt-1/JUST WANT TO DIE T-SHIRT.jpg", price: "Rp120.000" },
     { name: "Loser Turned Killer (T-Shirt)", url: "payment-loser-turned-killer(tshirt).html", image: "https://yzdmusic.github.io/tshirt-1/LOSER TURNED KILLER T-SHIRT.jpg", price: "Rp120.000" },
     { name: "Mati Bunuh Diri (T-Shirt)", url: "payment-mati-bunuh-diri(tshirt).html", image: "https://yzdmusic.github.io/tshirt-1/MATI BUNUH DIRI T-SHIRT.jpg", price: "Rp120.000" },
+    { name: "Mental Pressure - Mawt Samit (T-Shirt)", url: "payment-mental-pressure-mawt-samit(tshirt).html", image: "https://yzdmusic.github.io/tshirt-1/MENTAL PRESSURE T-SHIRT.jpg", price: "Rp120.000" },
     { name: "No Hope For Life - Mystic Euphoria (T-Shirt)", url: "payment-no-hope-for-life-mystic-euphoria(tshirt).html", image: "https://yzdmusic.github.io/tshirt-1/NO HOPE FOR LIFE T-SHIRT.jpg", price: "Rp120.000" },
     { name: "Numb - Dorokdox Symphony (T-Shirt)", url: "payment-numb-dorokdox-symphony(tshirt).html", image: "https://yzdmusic.github.io/tshirt-1/NUMB T-SHIRT.jpg", price: "Rp120.000" },
     { name: "Oppression - No Long Now (T-Shirt)", url: "payment-oppression-no-long-now(tshirt).html", image: "https://yzdmusic.github.io/tshirt-1/OPPRESSION T-SHIRT.jpg", price: "Rp120.000" },
