@@ -12,6 +12,7 @@ const data = [
     { name: "Demon Queen - Saint Heaven (T-Shirt)", url: "payment-demon-queen-saint-heaven(tshirt).html", image: "https://yzdmusic.github.io/tshirt-1/DEMON QUEEN T-SHIRT.jpg", price: "Rp120.000" },
     { name: "Die Today! - Kehedsia (T-Shirt)", url: "payment-die-today!-kehedsia(tshirt).html", image: "https://yzdmusic.github.io/tshirt-1/DIE TODAY! T-SHIRT.jpg", price: "Rp120.000" },
     { name: "Everything About Women - Rubick (T-Shirt)", url: "payment-everything-about-women-rubick(tshirt).html", image: "https://yzdmusic.github.io/tshirt-1/EVERYTHING ABOUT WOMEN T-SHIRT.jpg", price: "Rp120.000" },
+    { name: "Goat Throne - Dorokdox Symphony (T-Shirt)", url: "payment-goat-throne-dorokdox-symphony(tshirt).html", image: "https://yzdmusic.github.io/tshirt-1/GOAT THRONE T-SHIRT.jpg", price: "Rp120.000" },
     { name: "Goatman - Dorokdox Symphony (T-Shirt)", url: "payment-goatman-dorokdox-symphony(tshirt).html", image: "https://yzdmusic.github.io/tshirt-1/GOATMAN 2 T-SHIRT.jpg", price: "Rp120.000" },
     { name: "Habis Lebaran Nyari Kerjaan Dimana Lagi Ya - Mesin Jahit (T-Shirt)", url: "payment-habis-lebaran-nyari-kerjaan-dimana-lagi-ya-mesin-jahit(tshirt).html", image: "https://yzdmusic.github.io/tshirt-1/HABIS LEBARAN NYARI KERJAAN DIMANA LAGI YA T-SHIRT.jpg", price: "Rp120.000" },
     { name: "Halawes - Hazza (T-Shirt)", url: "payment-halawes-hazza(tshirt).html", image: "https://yzdmusic.github.io/tshirt-1/HALAWES T-SHIRT.jpg", price: "Rp120.000" },

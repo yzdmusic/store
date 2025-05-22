@@ -262,6 +262,7 @@ body {
     width: 170px;
     white-space: nowrap;
     overflow: hidden;
+    text-overflow: ellipsis;
     font-size: 15px;
     font-weight: normal;
     margin: 5px;
