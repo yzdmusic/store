@@ -1431,17 +1431,6 @@
         })
     </script>
 
-    <script>
-        document.querySelectorAll('.suggestions').forEach(el => {
-            const maxWords = 50;
-            const words = el.textContent.trim().split(' ');
-
-            if (words.length > maxWords) {
-                el.textContent = words.slice(0, maxWords).join(' ') + '...';
-            }
-        });
-    </script>
-
     <script src="https://yzdmusic.github.io/id/js/collapsible-store.js"></script>
     <script src="https://yzdmusic.github.io/id/js/search-engine-store.js"></script>
 </body>
