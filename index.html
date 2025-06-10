@@ -238,7 +238,8 @@
                 </div>
             </a>
 
-            <a href="https://yzdmusic.github.io/store/products/tshirt/dorokdox-symphony/killing-the-father's-family-tshirt/">
+            <a
+                href="https://yzdmusic.github.io/store/products/tshirt/dorokdox-symphony/killing-the-father's-family-tshirt/">
                 <div class="card-tshirt">
                     <img src="https://yzdmusic.github.io/tshirt-1/KILLING THE FATHER'S FAMILY T-SHIRT.jpg" alt="">
                     <div class="description">
@@ -458,7 +459,8 @@
                 </div>
             </a>
 
-            <a href="https://yzdmusic.github.io/store/products/tshirt/dorokdox-symphony/killing-the-father's-family-tshirt/">
+            <a
+                href="https://yzdmusic.github.io/store/products/tshirt/dorokdox-symphony/killing-the-father's-family-tshirt/">
                 <div class="card-tshirt">
                     <img src="https://yzdmusic.github.io/tshirt-1/KILLING THE FATHER'S FAMILY T-SHIRT.jpg" alt="">
                     <div class="description">
@@ -624,7 +626,8 @@
                 </div>
             </a>
 
-            <a href="https://yzdmusic.github.io/store/products/tshirt/dorokdox-symphony/killing-the-father's-family-tshirt/">
+            <a
+                href="https://yzdmusic.github.io/store/products/tshirt/dorokdox-symphony/killing-the-father's-family-tshirt/">
                 <div class="card-tshirt">
                     <img src="https://yzdmusic.github.io/tshirt-1/KILLING THE FATHER'S FAMILY T-SHIRT.jpg" alt="">
                     <div class="description">
@@ -1053,7 +1056,8 @@
                 </div>
             </a>
 
-            <a href="https://yzdmusic.github.io/store/products/tshirt/el-zill-el-aswad/rehlet-hayat-ragel-fashil-tshirt/">
+            <a
+                href="https://yzdmusic.github.io/store/products/tshirt/el-zill-el-aswad/rehlet-hayat-ragel-fashil-tshirt/">
                 <div class="card-tshirt">
                     <img src="https://yzdmusic.github.io/tshirt-1/REHLET HAYAT RAGEL FASHIL T-SHIRT.jpg" alt="">
                     <div class="description">
@@ -1429,6 +1433,23 @@
             shuffle(cards);
             cards.forEach(card => container.appendChild(card));
         })
+    </script>
+
+    <script>
+        function truncateWords(text, maxWords = 7) {
+            const words = text.split(' ');
+            if (words.length <= maxWords) return text;
+            return words.slice(0, maxWords).join(' ') + '...';
+        }
+
+        // Hook ke DOM setelah halaman dimuat
+        document.addEventListener('DOMContentLoaded', () => {
+            const suggestionItems = document.querySelectorAll('.suggestion-name');
+            suggestionItems.forEach(item => {
+                const originalText = item.textContent;
+                item.textContent = truncateWords(originalText, 7); // Ganti 8 sesuai kebutuhan
+            });
+        });
     </script>
 
     <script src="https://yzdmusic.github.io/id/js/collapsible-store.js"></script>
