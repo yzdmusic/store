@@ -1,1 +1,247 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="https://yzdmusic.github.io/id/css/stylePaymentMethods.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>Payment - Death As The Solution T-Shirt by Mawt Samit</title>
+</head>
+
+<body>
+  <div class="container-paymentmethods">
+    <div class="product-photo">
+      <img src="https://yzdmusic.github.io/tshirt-1/DEATH AS THE SOLUTION T-SHIRT.jpg" alt="">
+    </div>
+
+    <div id="customAlert" class="alert hidden">
+      <img src="https://yzdmusic.github.io/id/assets/exclamation.png" class="icon" alt="alert icon" />
+      <span id="alertMessage" class="message">Error Alert</span>
+      <span class="close-btn" onclick="closeAlert()">&times;</span>
+    </div>
+
+    <h2>What do you wanna buy?</h2>
+    <label>
+      <input type="radio" name="purchaseType" value="kaos" checked onchange="handleTypeChange()"> Grab the tee
+    </label>
+    <label>
+      <input type="radio" name="purchaseType" value="desain" onchange="handleTypeChange()"> Just the design (Rp20.000)
+    </label>
+
+    <div id="userInfo">
+      <label for="name">Your name:</label>
+      <input type="text" id="name" placeholder="Tell us your name...">
+
+      <label for="address">Where should we send it?</label>
+      <input type="text" id="address" placeholder="Your address...">
+    </div>
+
+    <div id="emailInput">
+      <label for="email">Your email:</label>
+      <input type="email" id="email" placeholder="We'll send the design here...">
+    </div>
+
+    <label for="discount">Got a Discount Code?</label>
+    <input type="text" id="discount" placeholder="Pop it in here if you've got one!" oninput="updateTotal()">
+
+    <label for="notes">Note from you (optional):</label>
+    <textarea id="note" rows="3" placeholder="e.g., Please wrap it up nicely, yeah..."></textarea>
+
+    <label class="payment-methods">How do you wanna pay?</label>
+    <div class="container-payment-option">
+      <div class="payment-option">
+        <input type="radio" name="payment" value="Dana" id="dana" checked>
+        <img src="https://yzdmusic.github.io/id/assets/dana-logo.png" alt="Dana Logo">
+      </div>
+      <div class="payment-option">
+        <input type="radio" name="payment" value="OVO" id="ovo">
+        <img src="https://yzdmusic.github.io/id/assets/ovo-logo.png" alt="OVO Logo">
+      </div>
+      <div class="payment-option">
+        <input type="radio" name="payment" value="PayPal" id="paypal">
+        <img src="https://yzdmusic.github.io/id/assets/paypal-logo.png" alt="PayPal Logo">
+      </div>
+      <div class="payment-option">
+        <input type="radio" name="payment" value="Bank BCA" id="bca">
+        <img src="https://yzdmusic.github.io/id/assets/bca-logo.png" alt="BCA Logo">
+      </div>
+      <div class="payment-option">
+        <input type="radio" name="payment" value="Pulsa Telkomsel" id="telkomsel">
+        <img src="https://yzdmusic.github.io/id/assets/telkomsel-logo.png" alt="Telkomsel Logo">
+      </div>
+    </div>
+
+    <label for="size">Pick your size:</label>
+    <select id="size">
+      <option value="M">M</option>
+      <option value="L">L</option>
+      <option value="XL">XL</option>
+    </select>
+
+    <label for="quantity">How many tees?</label>
+    <input type="number" id="quantity" value="1" min="1" onchange="updateTotal()">
+
+    <div id="totalPrice">Total: Rp120.000</div>
+
+    <div class="terms-and-conditions">
+      <h1>Terms & Conditions:</h1>
+      <p>1. If you purchase the design only, we’ll send the .PNG file to your Gmail.</p>
+      <p>2. The design file will be sent once the payment is confirmed.</p>
+      <p>3. If you order the physical t-shirt, shipping may take 7–14 days due to our pre-order system.</p>
+      <p>4. If you order the physical t-shirt but the payment isn’t confirmed yet, your order won’t be processed.</p>
+      <p>5. Please send your payment proof to our WhatsApp number.</p>
+
+      <h1>Syarat dan Ketentuan:</h1>
+      <p>1. Jika kalian membeli desain saja, maka kami akan mengirimkan file desainnya berformat .PNG melalui Gmail
+        kalian.</p>
+      <p>2. Pengiriman file desain akan dikirim jika pembayaran sudah deal.</p>
+      <p>3. Jika kalian membeli kaos fisik, kemungkinan pengiriman akan memakan waktu 7–14 hari dikarenakan sistem
+        pre-order.</p>
+      <p>4. Jika kalian membeli kaos fisik dan pembayaran belum deal, maka kaos belum akan diproses.</p>
+      <p>5. Kirimkan bukti pembayaran ke nomor WhatsApp kami.</p>
+    </div>
+  </div>
+
+  <div class="bottom-nav">
+    <div class="btn-back"><a href="https://yzdmusic.github.io/store/products/tshirt/mawt-samit/death-as-the-solution-tshirt/">
+        <img src="https://yzdmusic.github.io/id/assets/back-button2.png" alt="">
+      </a></div>
+
+    <div class="btn-buy" onclick="buyNow()">
+      <h1>Confirm Payment</h1>
+    </div>
+  </div>
+
+  <!-- Add here -->
+  <link rel="Shortcut Icon" type="image/png" href="https://yzdmusic.github.io/id/assets/YZD LOGO.png">
+
+  <script>
+    function updateTotal() {
+      const purchaseType = document.querySelector('input[name="purchaseType"]:checked').value;
+      const quantity = parseInt(document.getElementById("quantity").value) || 0;
+      const discountCode = document.getElementById("discount").value.trim();
+      let total = 0;
+
+      if (purchaseType === "kaos") {
+        total = 120000 * quantity;
+      } else {
+        total = 20000;
+      }
+
+      // Diskon kode (contoh: DISKON20 => potong Rp20.000)
+      if (discountCode === "YZDMUSIC2024") {
+        total -= 5000;
+      } else if (discountCode === "YZDMUSIC2025") {
+        total -= 10000;
+      }
+
+      if (total < 0) total = 0;
+      document.getElementById("totalPrice").innerText = "Total: Rp" + total.toLocaleString("id-ID");
+      return total;
+    }
+
+    function handleTypeChange() {
+      const purchaseType = document.querySelector('input[name="purchaseType"]:checked').value;
+      const sizeSelect = document.getElementById("size");
+      const quantityInput = document.getElementById("quantity");
+
+      const nameInput = document.getElementById("name");
+      const addressInput = document.getElementById("address");
+      const emailInput = document.getElementById("emailInput");
+
+      if (purchaseType === "desain") {
+        sizeSelect.disabled = true;
+        quantityInput.disabled = true;
+        quantityInput.value = 1;
+
+        nameInput.disabled = true;
+        addressInput.disabled = true;
+
+        emailInput.classList.remove("hidden");
+      } else {
+        sizeSelect.disabled = false;
+        quantityInput.disabled = false;
+
+        nameInput.disabled = false;
+        addressInput.disabled = false;
+
+        emailInput.classList.add("hidden");
+      }
+
+      updateTotal();
+    }
+
+    function buyNow() {
+      const purchaseType = document.querySelector('input[name="purchaseType"]:checked').value;
+      const paymentMethod = document.querySelector('input[name="payment"]:checked').value;
+      const size = document.getElementById("size").value;
+      const quantity = document.getElementById("quantity").value;
+      const name = document.getElementById("name").value.trim();
+      const address = document.getElementById("address").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const discountCode = document.getElementById("discount").value.trim();
+      const note = document.getElementById("note").value.trim();
+
+      const total = updateTotal();
+      let message = "";
+
+      if (purchaseType === "kaos") {
+        if (name === "" || address === "") {
+          showAlert("Mohon isi Nama dan Alamat terlebih dahulu.");
+          return;
+        }
+
+        message += "*Pembelian Kaos Fisik Death As The Solution - Mawt Samit*\n";
+        message += `Metode Pembayaran: ${paymentMethod}\n`;
+        message += `Ukuran: ${size}\n`;
+        message += `Jumlah: ${quantity}\n`;
+        message += `Nama: ${name}\n`;
+        message += `Alamat: ${address}\n`;
+      } else {
+        if (email === "") {
+          showAlert("Mohon isi Email terlebih dahulu.");
+          return;
+        }
+
+        message += "*Pembelian Desain Kaos Death As The Solution - Mawt Samit*\n";
+        message += `Metode Pembayaran: ${paymentMethod}\n`;
+        message += `Email: ${email}\n`;
+      }
+
+      if (discountCode !== "") {
+        message += `Kode Diskon: ${discountCode}\n`;
+      }
+
+      if (note !== "") {
+        message += `Pesan Pembeli: ${note}\n`;
+      }
+
+      message += `Total Pembayaran: Rp. ${total.toLocaleString("id-ID")}`;
+
+      const waUrl = `https://wa.me/6281218141079?text=${encodeURIComponent(message)}`;
+      window.open(waUrl, "_blank");
+    }
+
+    function showAlert(message) {
+      const alertBox = document.getElementById("customAlert");
+      const alertMsg = document.getElementById("alertMessage");
+
+      alertMsg.innerText = message;
+      alertBox.classList.remove("hidden");
+
+      // Optional: auto-close after 5 seconds
+      setTimeout(() => {
+        alertBox.classList.add("hidden");
+      }, 5000);
+    }
+
+    function closeAlert() {
+      document.getElementById("customAlert").classList.add("hidden");
+    }
+  </script>
+
+</body>
+
+</html>
